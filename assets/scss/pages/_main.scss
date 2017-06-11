@@ -440,6 +440,7 @@ section.subscribe {
 				padding: 0 10px;
 				border: 1px solid #acacac;
 				color: #121212;
+				border-radius: 0;
 
 				&::-webkit-input-placeholder {
 					font-size: 12px;
@@ -453,6 +454,7 @@ section.subscribe {
 				color: #fff;
 				appearance:none;
 				background: #b5876d;
+				border-radius: 0;
 				transition: 0.3s;
 
 				&:hover {
