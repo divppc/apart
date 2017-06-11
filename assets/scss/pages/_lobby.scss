@@ -101,6 +101,7 @@ section.lobby {
 section.about-lobby {
 	border-top: 2px solid #cad3de;
 	border-bottom: 2px solid #cad3de;
+	margin-bottom: 30px;
 
 	&:before,
 	&:after {
@@ -143,7 +144,6 @@ section.about-lobby {
 }
 
 section.about-apartments {
-	border-bottom: 2px solid #cad3de;
 	padding-bottom: 40px;
 
 	.container {

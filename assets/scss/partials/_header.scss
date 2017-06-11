@@ -414,6 +414,10 @@ header {
 		margin-bottom: 40px	;
 	}
 
+	&.inner {
+		margin-top: -50px;
+	}
+
 	&+.booking {
 		margin-top: 0;
 
