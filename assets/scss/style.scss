@@ -25,10 +25,12 @@ body {
 	max-width: $container-width;
 	margin: 0 auto;
 	padding: 0 10px;
+
 	@media (min-width: $responsive-desktop) {
 		padding: 0;
 	}
 }
+
 a {
 	text-decoration: none;
 }
@@ -51,9 +53,11 @@ h1,h2,h3,h4,h5,h6,p {
 a {
 	text-decoration: none;
 	transition: 0.3s;
+	color: inherit
 }
 
-input {
+input,
+select {
 	border: 0;
 	outline: none;
 
@@ -63,6 +67,11 @@ input {
     	box-shadow: 0 0 3px rgba(10,125,224,.5);
 		}
 	}
+}
+
+.icon {
+	display: block;
+	background: url("assets/images/ui/icons.png") no-repeat;
 }
 
 input,
@@ -84,6 +93,12 @@ button {
 .img-responsive {
 	display: block;
 	max-width: 100%;
+}
+
+ul,ol {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
 }
 
 

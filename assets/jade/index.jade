@@ -9,8 +9,285 @@ html(lang="ru")
 		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:300i,400,400i,700")
 		title Apart | Главная
 	body
-		h1 привет
-		
+		header
+			.header-slider
+				.slider-buttons
+					button.slider-left
+					button.slider-right
+				.slides
+					.slide(style="background-image: url('assets/images/ui/main-banner.png')")
+						.container
+							h1 "Базис оправдает Ваши ожидания"
+							p.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			.top-line
+				.container.clearfix
+					.select-language
+						.current-language
+							.language-flag
+								i.icon.flag-usa
+						ul.language-list
+							li
+								a(href="#")
+									i.icon-flag.usa
+									span English
+							li
+								a(href="#")
+									i.icon-flag.usa
+									span English
+							li
+								a(href="#")
+									i.icon-flag.usa
+									span English
+					ul.top-social
+						li
+							a(href="#" title='Facebook')
+								i.icon.social-facebook
+						li
+							a(href="#" title='Twitter')
+								i.icon.social-twitter
+						li
+							a(href="#" title='Instagram')
+								i.icon.social-instagram
+						li
+							a(href="#" title='Linkedin')
+								i.icon.social-linkedin
+					ul.top-contacts
+						li
+							a(href="tel:18001234567890" class="top-phone") 1800. 12345. 67890
+						li
+							a(href="mailto:mail@website.com" class="top-mail") mail@website.com
+			.nav-line
+				.container.clearfix
+					.main-bar.clearfix
+						.logo
+							a(href="#")
+								img(src="assets/images/ui/main-logo.png", alt="Apart Hotel")
+								span Апарт отель
+						.mobile-menu
+							img(src="assets/images/ui/burger.png", alt="")
+					nav
+						ul.main-nav
+							li
+								a(href="#") ГЛАВНАЯ
+							li
+								a(href="#")	Номера
+								ul.dd-menu
+									li
+										a(href="#") Номера студио
+										ul.dd-menu2
+											li
+												a(href="#") Номера студио
+											li
+												a(href="#") Номера люкс
+											li
+												a(href="#") Номера люкс
+											li
+												a(href="#") Номера люкс
+											li
+												a(href="#") Номера люкс
+											li
+												a(href="#") Номера люкс
+									li
+										a(href="#") Номера люкс
 
+							li
+								a(href="#") ЛОББИ-БАР
+							li
+								a(href="#") ПРОГРАММА ЛОЯЛЬНОСТИ
+							li
+								a(href="#") ГАЛЕРЕЯ
+							li
+								a(href="#" class="search")
+			.booking
+				.container
+					form(action="#")
+						.form-field.date
+							input(type="text" placeholder="ЗАЕЗД" required)
+						.form-field.date
+							input(type="text" placeholder="ВЫЕЗД" required)
+						.form-field
+							select#room(name="room" required)
+								option(value="" disabled selected) Комната
+								option(value="1") 1
+								option(value="2") 2
+								option(value="3") 3
+						.form-field
+							select#kids(name="kids" required)
+								option(value="" disabled selected) Дети
+								option(value="1") 1
+								option(value="2") 2
+								option(value="3") 3
+						.form-field
+							input(type="submit" value="Поиск")
+		main
+			section.about
+				.container.clearfix
+					h2 Об отеле
+					.about-hotel
+						.data
+							p.
+								Апарт-Отель Базис - это место, где вы можете отвлечься от дел и расслабиться с бокалом вкусного вина. Уникальный эмоциональный дизайн наших комфортных апартаментов не оставит вас равнодушными, мы уверены, что Вам захочется раскрыть его суть, и Вы, в следующий раз, приезжая в гостеприимный Киев, обязательно остановитесь у нас. Конечно, хорошее обслуживание, вкусная еда, вина и другие напитки в нашем лобби-баре, индивидуальный подход и наше стремление угадать желания каждого из гостей, будут дополнительно способствовать этому.
+							.signature
+								img(src="assets/images/ui/signature.png", alt="")
+								span -Антон Лаврентьев
+						.hotel-img
+							img(src="assets/images/demo/about-hotel.png", alt="")
+					p.
+						Наш апарт-отель расположился на Печерских холмах в центральной части Киева, на территории элитного жилого комплекса. Всего в нескольких минутах ходьбы находится метро и крупные транспортные развязки, с помощью которых можно легко добраться до всех самых интересных уголков древнего и в то же время современного Киева. 
+					p.
+						Наш апарт-отель расположился на Печерских холмах в центральной части Киева, на территории элитного жилого комплекса. Всего в нескольких минутах ходьбы находится метро и крупные транспортные развязки, с помощью которых можно легко добраться до всех самых интересных уголков древнего и в то же время современного Киева.
+			section.list
+				.container
+					.man
+						img(src="assets/images/ui/man.png", alt="" class="img-responsive")
+					.list-holder
+						.list-title Наши достоинства, которые укладываются в формулу " комфорт +безопасность":
+						ul.included-items
+							li.
+								Расположение отеля в тихой части центра города;
+							li.
+								Охраняемая закрытая территория с парковкой;
+							li.
+								Повышенная звукоизоляция номеров;
+							li.
+								Возможность заказа блюд в номер;
+							li.
+								Консьерж-сервис, включающий:	вызов такси;
+							li.
+								Организация экскурсий по историческим местам Киева;	услуга "личный гид";
+							li.
+								Бронирование столиков в ресторанах;
+							li.
+								Заказ цветочных композиций и многое другое;
+							li.
+								Партнерские соглашения с расположенными неподалеку спорт-клубом, фитнесс-центром;
+							li.
+								Шоппинг-центр, продуктовый супермаркет находятся в нескольких минутах от отеля.
+						.list-title.
+							Опционально (за дополнительную плату) предлагаются:
+						ul.additional-items
+							li.
+								Услуги стирки-глажки (за доп. плату);
+							li.
+								Предоставление сим-карты с местной мобильной связью и мобильным интернетом (за доп. плату).
+							li.
+								Услуги агентства по аренде авто; и др.
+			section.hi
+				.container
+					h3.
+						Приветствуем Вас, дорогие гости, мы постараемся оправдать Ваши ожидания, из какого бы уголка мира вы не приехали!
+			section.response
+				.container
+					h4 Отзывы
+					.response-container
+						.response
+							p.
+								Claritas etiam processus dynamicus, qur mutationem. Claritas tiam procsus dycus, qui sequitur mutationem.
+							.author Ольга Романова
+							.date 16.05.2017
+						.response
+							p.
+								Claritas etiam processus dynamicus, qur mutationem. Claritas tiam procsus dycus, qui sequitur mutationem.
+							.author Ольга Романова
+							.date 16.05.2017
+						.response
+							p.
+								Claritas etiam processus dynamicus, qur mutationem. Claritas tiam procsus dycus, qui sequitur mutationem.
+							.author Ольга Романова
+							.date 16.05.2017
+					a(href="#") Оставить отзыв
+			section.brands
+				.container
+					ul
+						li
+							img(src="assets/images/demo/brand1.png", alt="" class="img-responsive")
+						li
+							img(src="assets/images/demo/brand2.png", alt="" class="img-responsive")
+						li
+							img(src="assets/images/demo/brand3.png", alt="" class="img-responsive")
+						li
+							img(src="assets/images/demo/brand4.png", alt="" class="img-responsive")
+						li
+							img(src="assets/images/demo/brand5.png", alt="" class="img-responsive")
+						li
+							img(src="assets/images/demo/brand6.png", alt="" class="img-responsive")
+			section.map#map
+			section.subscribe
+				.container
+					div ПОДПИСАТЬСЯ НА НОВОСТИ
+					form(action="#")
+						input(type="email" required placeholder="Введите адрес электронной почты ")
+						input(type="submit" value="подписаться")
+		footer
+			section.footer
+				.container
+					.about
+						.logo
+							a(href="#")
+								img(src="assets/images/ui/main-logo.png", alt="")
+						p.
+							Lorem ipsum dolor sit amet, conse acteir our adipisicing elit, sed do eiusmod the a tempor the incididunt ut labore et dolore magnaa liqua. Ut enim minimn.
+						ul.footer-social
+							li
+								a(href="#")
+									i.icon.footer-facebook
+							li
+								a(href="#")
+									i.icon.footer-instagram
+							li
+								a(href="#")
+									i.icon.footer-linkedin
+							li
+								a(href="#")
+									i.icon.footer-twitter
+					.contacts
+						.subtitle СВЯЖИТЕСЬ С НАМИ
+						ul
+							li.address
+								span г. Киев, Печерск,  ул. Кудри, 7, ЖК Central Park
+							li.mails
+								span hotelbasis@gmail.com
+								span hotelbasis@gmail.com
+							li.phones
+								span +660 256 24857
+								span +660 256 24857
+					.footer-nav
+						.subtitle БЫСТРЫЕ ССЫЛКИ
+						ul
+							li
+								a(href="#") Главная
+							li
+								a(href="#") Номера
+							li
+								a(href="#") Лобби-бар
+							li
+								a(href="#") Программа лояльности
+							li
+								a(href="#") Галерея
+					.gallery
+						.subtitle Галерея
+						ul
+							li
+								a(href="#")
+									img(src="assets/images/demo/footer-gallary-item1.png", alt="" class="img-responsive")
+							li
+								a(href="#")
+									img(src="assets/images/demo/footer-gallary-item2.png", alt="" class="img-responsive")
+							li
+								a(href="#")
+									img(src="assets/images/demo/footer-gallary-item3.png", alt="" class="img-responsive")
+							li
+								a(href="#")
+									img(src="assets/images/demo/footer-gallary-item4.png", alt="" class="img-responsive")
+							li
+								a(href="#")
+									img(src="assets/images/demo/footer-gallary-item5.png", alt="" class="img-responsive")
+							li
+								a(href="#")
+									img(src="assets/images/demo/footer-gallary-item6.png", alt="" class="img-responsive")
+			.footer-bottom
+				.container © Авторские права 2017  <a href="#">APART-HOTEL</a>  - все права защищены 
 		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
+		script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK7Jw44Mj0AgOq_2Z31V2XqOVhDTw_HZI")
 		script(src="assets/js/main.js")
