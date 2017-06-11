@@ -9,9 +9,36 @@ section.footer {
 		padding: 95px 0;
 	}
 
+	.to-top {
+		display: block;
+		width: 38px;
+		height: 38px;
+		background: #b5876d;
+		position: absolute;
+		right: 5px;
+		top: -20px;
+
+		&:hover {
+			background: darken(#b5876d, 5%);
+		}
+
+		&:after {
+			display: block;
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 15px;
+			height: 10px;
+			background: url("assets/images/ui/icons.png") no-repeat 0px -196px;
+		}
+	}
+
 	.container {
 		display: flex;
 		flex-wrap: wrap;
+		position: relative;
 
 		@media (min-width: $responsive-tablet) {
 			justify-content: space-between;

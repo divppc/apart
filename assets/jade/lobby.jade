@@ -7,7 +7,7 @@ html(lang="ru")
 		link(rel="stylesheet", href="https://necolas.github.io/normalize.css/3.0.2/normalize.css")
 		link(rel="stylesheet", href="style.css")
 		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:300i,400,400i,700")
-		title Apart | Главная
+		title Apart | Лобби-бар
 	body
 		header
 			.header-slider
@@ -99,6 +99,12 @@ html(lang="ru")
 								a(href="#") ГАЛЕРЕЯ
 							li
 								a(href="#" class="search")
+			.breadcrumbs
+				.container
+					ul
+						li
+							a(href="#") Отель
+						li Лобби-бар
 			.booking
 				.container
 					form(action="#")
@@ -121,98 +127,39 @@ html(lang="ru")
 						.form-field
 							input(type="submit" value="Поиск")
 		main
-			section.about
-				.container.clearfix
-					h2 Об отеле
-					.about-hotel
-						.data
-							p.
-								Апарт-Отель Базис - это место, где вы можете отвлечься от дел и расслабиться с бокалом вкусного вина. Уникальный эмоциональный дизайн наших комфортных апартаментов не оставит вас равнодушными, мы уверены, что Вам захочется раскрыть его суть, и Вы, в следующий раз, приезжая в гостеприимный Киев, обязательно остановитесь у нас. Конечно, хорошее обслуживание, вкусная еда, вина и другие напитки в нашем лобби-баре, индивидуальный подход и наше стремление угадать желания каждого из гостей, будут дополнительно способствовать этому.
-							.signature
-								img(src="assets/images/ui/signature.png", alt="")
-								span -Антон Лаврентьев
-						.hotel-img
-							img(src="assets/images/demo/about-hotel.png", alt="")
+			section.lobby
+				.container
+					.main-photo
+						.control-buttons
+							a(href="#" class="share")
+							a(href="#" class="zoom")
+						img(src="assets/images/demo/lobby-main.png", alt="" class="img-responsive")
+					.thumbnails
+						.slider-buttons
+							button.slider-left
+							button.slider-right
+						.thumbs
+							.thumb
+								img(src="assets/images/demo/lobby-thumb1.png", alt="" class="img-responsive")
+							.thumb
+								img(src="assets/images/demo/lobby-thumb2.png", alt="" class="img-responsive")
+							.thumb
+								img(src="assets/images/demo/lobby-thumb3.png", alt="" class="img-responsive")
+							.thumb
+								img(src="assets/images/demo/lobby-thumb4.png", alt="" class="img-responsive")
+							.thumb
+								img(src="assets/images/demo/lobby-thumb5.png", alt="" class="img-responsive")
+			section.about-lobby
+				.container
 					p.
-						Наш апарт-отель расположился на Печерских холмах в центральной части Киева, на территории элитного жилого комплекса. Всего в нескольких минутах ходьбы находится метро и крупные транспортные развязки, с помощью которых можно легко добраться до всех самых интересных уголков древнего и в то же время современного Киева. 
+						Добро пожаловать в наш Лобби-бар. Уютная атмосфера, 
+						блюда национальной и не только кухни, хороший выбор европейских вин 
+						и закусок, вкусная выпечка и кондитерские изделия, ароматный кофе и другие вкусности 
+						не дадут вам проголодаться.
 					p.
-						Наш апарт-отель расположился на Печерских холмах в центральной части Киева, на территории элитного жилого комплекса. Всего в нескольких минутах ходьбы находится метро и крупные транспортные развязки, с помощью которых можно легко добраться до всех самых интересных уголков древнего и в то же время современного Киева.
-			section.list
-				.container
-					.man
-						img(src="assets/images/ui/man.png", alt="" class="img-responsive")
-					.list-holder
-						.list-title Наши достоинства, которые укладываются в формулу " комфорт +безопасность":
-						ul.included-items
-							li.
-								Расположение отеля в тихой части центра города;
-							li.
-								Охраняемая закрытая территория с парковкой;
-							li.
-								Повышенная звукоизоляция номеров;
-							li.
-								Возможность заказа блюд в номер;
-							li.
-								Консьерж-сервис, включающий:	вызов такси;
-							li.
-								Организация экскурсий по историческим местам Киева;	услуга "личный гид";
-							li.
-								Бронирование столиков в ресторанах;
-							li.
-								Заказ цветочных композиций и многое другое;
-							li.
-								Партнерские соглашения с расположенными неподалеку спорт-клубом, фитнесс-центром;
-							li.
-								Шоппинг-центр, продуктовый супермаркет находятся в нескольких минутах от отеля.
-						.list-title.
-							Опционально (за дополнительную плату) предлагаются:
-						ul.additional-items
-							li.
-								Услуги стирки-глажки (за доп. плату);
-							li.
-								Предоставление сим-карты с местной мобильной связью и мобильным интернетом (за доп. плату).
-							li.
-								Услуги агентства по аренде авто; и др.
-			section.hi
-				.container
-					h3.
-						Приветствуем Вас, дорогие гости, мы постараемся оправдать Ваши ожидания, из какого бы уголка мира вы не приехали!
-			section.response
-				.container
-					h4 Отзывы
-					.response-container
-						.response
-							p.
-								Claritas etiam processus dynamicus, qur mutationem. Claritas tiam procsus dycus, qui sequitur mutationem.
-							.author Ольга Романова
-							.date 16.05.2017
-						.response
-							p.
-								Claritas etiam processus dynamicus, qur mutationem. Claritas tiam procsus dycus, qui sequitur mutationem.
-							.author Ольга Романова
-							.date 16.05.2017
-						.response
-							p.
-								Claritas etiam processus dynamicus, qur mutationem. Claritas tiam procsus dycus, qui sequitur mutationem.
-							.author Ольга Романова
-							.date 16.05.2017
-					a(href="#") Оставить отзыв
-			section.brands
-				.container
-					ul
-						li
-							img(src="assets/images/demo/brand1.png", alt="" class="img-responsive")
-						li
-							img(src="assets/images/demo/brand2.png", alt="" class="img-responsive")
-						li
-							img(src="assets/images/demo/brand3.png", alt="" class="img-responsive")
-						li
-							img(src="assets/images/demo/brand4.png", alt="" class="img-responsive")
-						li
-							img(src="assets/images/demo/brand5.png", alt="" class="img-responsive")
-						li
-							img(src="assets/images/demo/brand6.png", alt="" class="img-responsive")
-			section.map#map
+						Кроме этого, вы можете делать заказ блюд 
+						нашего меню и напитков с бесплатной доставкой прямо в ваш номер.
+
 			section.subscribe
 				.container
 					div ПОДПИСАТЬСЯ НА НОВОСТИ

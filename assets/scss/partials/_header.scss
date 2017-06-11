@@ -277,7 +277,7 @@ header {
 		h1 {
 			flex-basis: 100%;
 			text-transform: uppercase;
-			font-size: 24px;
+			font-size: 20px;
 			font-family: $raleway;
 			font-weight: 700;
 			margin-bottom: 25px;
@@ -375,6 +375,7 @@ header {
 			color: #fff;
 			border: none;
 			transition: 0.3s;
+			padding: 0;
 
 			&:hover {
 				background: darken(#b5876d, 5%);
@@ -394,6 +395,64 @@ header {
 			width: 14px;
 			height: 14px;
 			background: url("assets/images/ui/icons.png") no-repeat 0px -137px;
+		}
+	}
+}
+
+.breadcrumbs {
+	position: relative;
+	margin-top: -50px;
+	margin-bottom: 20px;
+
+	@media (min-width: $responsive-laptop) {
+		margin-top: -100px;
+		margin-bottom: 20px	;
+	}
+
+	@media (min-width: $responsive-desktop) {
+		margin-top: -190px;
+		margin-bottom: 40px	;
+	}
+
+	&+.booking {
+		margin-top: 0;
+
+		@media (min-width: $responsive-laptop) {
+			margin-top: 0;
+		}
+	}
+
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	li {
+		text-transform: uppercase;
+		font-size: 12px;
+		display: flex;
+		align-items: center;
+		color: #b5876d;
+
+		@media (min-width: $responsive-tablet) {
+			font-size: 15px;
+		}
+
+		&:not(:first-child) {
+
+			&:before {
+				display: block;
+				content: '-';
+				margin: 0 5px;
+			}
+		}
+	}
+
+	a {
+		color: #fff;
+
+		&:hover {
+			text-decoration: underline;
 		}
 	}
 }
