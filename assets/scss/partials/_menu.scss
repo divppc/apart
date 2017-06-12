@@ -35,6 +35,7 @@
 		float: left;
 		position: relative;
 		padding-top: 20px;
+		z-index: 2;
 
 		&:before {
 			display: block;
@@ -98,6 +99,15 @@
 			float: right;
 			max-height: 100vw;
 			overflow: visible;
+		}
+
+		&.active {
+			max-height: 100vh;
+			overflow: visible;
+			z-index: 1;
+			position: relative;
+			background: #fff;
+			height: 100vh;
 		}
 	}
 

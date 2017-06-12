@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css"/>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:300i,400,400i,700"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" href="assets/css/datedropper.min.css"/>
     <title>Apart | Главная</title>
   </head>
   <body>
@@ -16,12 +18,19 @@
           <button class="slider-left"></button>
           <button class="slider-right"></button>
         </div>
-        <div class="dots">
-          <div class="dot active"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-        </div>
         <div class="slides">
+          <div style="background-image: url('assets/images/ui/main-banner.png')" class="slide">
+            <div class="container">
+              <h1>"Базис оправдает Ваши ожидания"</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+          <div style="background-image: url('assets/images/ui/main-banner.png')" class="slide">
+            <div class="container">
+              <h1>"Базис оправдает Ваши ожидания"</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
           <div style="background-image: url('assets/images/ui/main-banner.png')" class="slide">
             <div class="container">
               <h1>"Базис оправдает Ваши ожидания"</h1>
@@ -37,9 +46,9 @@
               <div class="language-flag"><i class="icon flag-usa"></i></div>
             </div>
             <ul class="language-list">
-              <li><a href="#"><i class="icon-flag usa"></i><span>English</span></a></li>
-              <li><a href="#"><i class="icon-flag usa"></i><span>English</span></a></li>
-              <li><a href="#"><i class="icon-flag usa"></i><span>English</span></a></li>
+              <li><a href="#"><i class="icon flag-usa"></i><span>English</span></a></li>
+              <li><a href="#"><i class="icon flag-usa"></i><span>English</span></a></li>
+              <li><a href="#"><i class="icon flag-usa"></i><span>English</span></a></li>
             </ul>
           </div>
           <ul class="top-social">
@@ -90,10 +99,10 @@
         <div class="container">
           <form action="#">
             <div class="form-field date">
-              <input type="text" placeholder="ЗАЕЗД" required="required"/>
+              <input type="text" placeholder="ЗАЕЗД" required="required" data-lang="ru" class="dates"/>
             </div>
             <div class="form-field date">
-              <input type="text" placeholder="ВЫЕЗД" required="required"/>
+              <input type="text" placeholder="ВЫЕЗД" required="required" data-lang="ru" class="dates"/>
             </div>
             <div class="form-field">
               <select id="room" name="room" required="required">
@@ -168,6 +177,21 @@
         <div class="container">
           <h4>Отзывы</h4>
           <div class="response-container">
+            <div class="response">
+              <p>Claritas etiam processus dynamicus, qur mutationem. Claritas tiam procsus dycus, qui sequitur mutationem.</p>
+              <div class="author">Ольга Романова</div>
+              <div class="date">16.05.2017</div>
+            </div>
+            <div class="response">
+              <p>Claritas etiam processus dynamicus, qur mutationem. Claritas tiam procsus dycus, qui sequitur mutationem.</p>
+              <div class="author">Ольга Романова</div>
+              <div class="date">16.05.2017</div>
+            </div>
+            <div class="response">
+              <p>Claritas etiam processus dynamicus, qur mutationem. Claritas tiam procsus dycus, qui sequitur mutationem.</p>
+              <div class="author">Ольга Романова</div>
+              <div class="date">16.05.2017</div>
+            </div>
             <div class="response">
               <p>Claritas etiam processus dynamicus, qur mutationem. Claritas tiam procsus dycus, qui sequitur mutationem.</p>
               <div class="author">Ольга Романова</div>
@@ -259,6 +283,9 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK7Jw44Mj0AgOq_2Z31V2XqOVhDTw_HZI"></script>
+    <script src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="assets/js/map.js"></script>
+    <script src="assets/js/datedropper.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

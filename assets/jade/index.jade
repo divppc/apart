@@ -7,6 +7,8 @@ html(lang="ru")
 		link(rel="stylesheet", href="https://necolas.github.io/normalize.css/3.0.2/normalize.css")
 		link(rel="stylesheet", href="style.css")
 		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:300i,400,400i,700")
+		link(rel="stylesheet", href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css")
+		link(rel="stylesheet", href="assets/css/datedropper.min.css")		
 		title Apart | Главная
 	body
 		header
@@ -14,11 +16,17 @@ html(lang="ru")
 				.slider-buttons
 					button.slider-left
 					button.slider-right
-				.dots
-					.dot.active
-					.dot
-					.dot
 				.slides
+					.slide(style="background-image: url('assets/images/ui/main-banner.png')")
+						.container
+							h1 "Базис оправдает Ваши ожидания"
+							p.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					.slide(style="background-image: url('assets/images/ui/main-banner.png')")
+						.container
+							h1 "Базис оправдает Ваши ожидания"
+							p.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 					.slide(style="background-image: url('assets/images/ui/main-banner.png')")
 						.container
 							h1 "Базис оправдает Ваши ожидания"
@@ -33,15 +41,15 @@ html(lang="ru")
 						ul.language-list
 							li
 								a(href="#")
-									i.icon-flag.usa
+									i.icon.flag-usa
 									span English
 							li
 								a(href="#")
-									i.icon-flag.usa
+									i.icon.flag-usa
 									span English
 							li
 								a(href="#")
-									i.icon-flag.usa
+									i.icon.flag-usa
 									span English
 					ul.top-social
 						li
@@ -107,9 +115,9 @@ html(lang="ru")
 				.container
 					form(action="#")
 						.form-field.date
-							input(type="text" placeholder="ЗАЕЗД" required)
+							input(type="text" placeholder="ЗАЕЗД" required class="dates" data-lang="ru")
 						.form-field.date
-							input(type="text" placeholder="ВЫЕЗД" required)
+							input(type="text" placeholder="ВЫЕЗД" required class="dates" data-lang="ru")
 						.form-field
 							select#room(name="room" required)
 								option(value="" disabled selected) Комната
@@ -185,6 +193,21 @@ html(lang="ru")
 				.container
 					h4 Отзывы
 					.response-container
+						.response
+							p.
+								Claritas etiam processus dynamicus, qur mutationem. Claritas tiam procsus dycus, qui sequitur mutationem.
+							.author Ольга Романова
+							.date 16.05.2017
+						.response
+							p.
+								Claritas etiam processus dynamicus, qur mutationem. Claritas tiam procsus dycus, qui sequitur mutationem.
+							.author Ольга Романова
+							.date 16.05.2017
+						.response
+							p.
+								Claritas etiam processus dynamicus, qur mutationem. Claritas tiam procsus dycus, qui sequitur mutationem.
+							.author Ольга Романова
+							.date 16.05.2017
 						.response
 							p.
 								Claritas etiam processus dynamicus, qur mutationem. Claritas tiam procsus dycus, qui sequitur mutationem.
@@ -295,4 +318,7 @@ html(lang="ru")
 				.container © Авторские права 2017  <a href="#">APART-HOTEL</a>  - все права защищены 
 		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
 		script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK7Jw44Mj0AgOq_2Z31V2XqOVhDTw_HZI")
+		script(src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js")
+		script(src="assets/js/map.js")
+		script(src="assets/js/datedropper.min.js")
 		script(src="assets/js/main.js")

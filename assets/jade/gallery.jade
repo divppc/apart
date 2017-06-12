@@ -7,9 +7,10 @@ html(lang="ru")
 		link(rel="stylesheet", href="https://necolas.github.io/normalize.css/3.0.2/normalize.css")
 		link(rel="stylesheet", href="style.css")
 		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:300i,400,400i,700")
+		link(rel="stylesheet", href="assets/css/jquery.fancybox.css")
 		title Apart | Галерея
 	body
-		header
+		header.no-slider
 			.header-slider
 				.slider-buttons
 					button.slider-left
@@ -18,8 +19,6 @@ html(lang="ru")
 					.slide(style="background-image: url('assets/images/ui/main-banner.png')")
 						.container
 							h1 Галерея
-							p.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 			.top-line
 				.container.clearfix
 					.select-language
@@ -29,15 +28,15 @@ html(lang="ru")
 						ul.language-list
 							li
 								a(href="#")
-									i.icon-flag.usa
+									i.icon.flag-usa
 									span English
 							li
 								a(href="#")
-									i.icon-flag.usa
+									i.icon.flag-usa
 									span English
 							li
 								a(href="#")
-									i.icon-flag.usa
+									i.icon.flag-usa
 									span English
 					ul.top-social
 						li
@@ -105,27 +104,6 @@ html(lang="ru")
 						li
 							a(href="#") Отель
 						li Галерея
-			.booking
-				.container
-					form(action="#")
-						.form-field.date
-							input(type="text" placeholder="ЗАЕЗД" required)
-						.form-field.date
-							input(type="text" placeholder="ВЫЕЗД" required)
-						.form-field
-							select#room(name="room" required)
-								option(value="" disabled selected) Комната
-								option(value="1") 1
-								option(value="2") 2
-								option(value="3") 3
-						.form-field
-							select#kids(name="kids" required)
-								option(value="" disabled selected) Дети
-								option(value="1") 1
-								option(value="2") 2
-								option(value="3") 3
-						.form-field
-							input(type="submit" value="Поиск")
 		main
 			section.gallery
 				.container
@@ -133,7 +111,7 @@ html(lang="ru")
 						.img-holder
 							.control-buttons
 								a(href="#" class="share")
-								a(href="#" class="zoom")
+								a(href="assets/images/demo/gallary1.png" class="zoom fancybox")
 							img(src="assets/images/demo/gallary1.png", alt="" class="img-responsive")
 						a(href="#").data
 							span Помещение 3
@@ -142,7 +120,7 @@ html(lang="ru")
 						.img-holder
 							.control-buttons
 								a(href="#" class="share")
-								a(href="#" class="zoom")
+								a(href="assets/images/demo/gallary2.png" class="zoom fancybox")
 							img(src="assets/images/demo/gallary2.png", alt="" class="img-responsive")
 						a(href="#").data
 							span Помещение 3
@@ -151,7 +129,7 @@ html(lang="ru")
 						.img-holder
 							.control-buttons
 								a(href="#" class="share")
-								a(href="#" class="zoom")
+								a(href="assets/images/demo/gallary3.png" class="zoom fancybox")
 							img(src="assets/images/demo/gallary3.png", alt="" class="img-responsive")
 						a(href="#").data
 							span Помещение 3
@@ -160,7 +138,7 @@ html(lang="ru")
 						.img-holder
 							.control-buttons
 								a(href="#" class="share")
-								a(href="#" class="zoom")
+								a(href="assets/images/demo/gallary4.png" class="zoom fancybox")
 							img(src="assets/images/demo/gallary4.png", alt="" class="img-responsive")
 						a(href="#").data
 							span Помещение 3
@@ -169,7 +147,7 @@ html(lang="ru")
 						.img-holder
 							.control-buttons
 								a(href="#" class="share")
-								a(href="#" class="zoom")
+								a(href="assets/images/demo/gallary5.png" class="zoom fancybox")
 							img(src="assets/images/demo/gallary5.png", alt="" class="img-responsive")
 						a(href="#").data
 							span Помещение 3
@@ -178,7 +156,7 @@ html(lang="ru")
 						.img-holder
 							.control-buttons
 								a(href="#" class="share")
-								a(href="#" class="zoom")
+								a(href="assets/images/demo/gallary6.png" class="zoom fancybox")
 							img(src="assets/images/demo/gallary6.png", alt="" class="img-responsive")
 						a(href="#").data
 							span Помещение 3
@@ -187,7 +165,7 @@ html(lang="ru")
 						.img-holder
 							.control-buttons
 								a(href="#" class="share")
-								a(href="#" class="zoom")
+								a(href="assets/images/demo/gallary7.png" class="zoom fancybox")
 							img(src="assets/images/demo/gallary7.png", alt="" class="img-responsive")
 						a(href="#").data
 							span Помещение 3
@@ -196,7 +174,7 @@ html(lang="ru")
 						.img-holder
 							.control-buttons
 								a(href="#" class="share")
-								a(href="#" class="zoom")
+								a(href="assets/images/demo/gallary8.png" class="zoom fancybox")
 							img(src="assets/images/demo/gallary8.png", alt="" class="img-responsive")
 						a(href="#").data
 							span Помещение 3
@@ -278,5 +256,5 @@ html(lang="ru")
 			.footer-bottom
 				.container © Авторские права 2017  <a href="#">APART-HOTEL</a>  - все права защищены 
 		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
-		script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK7Jw44Mj0AgOq_2Z31V2XqOVhDTw_HZI")
+		script(src="assets/js/jquery.fancybox.js")
 		script(src="assets/js/main.js")

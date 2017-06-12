@@ -83,24 +83,40 @@ section.apartments {
 .dots {
 	position: absolute;
 	width: 100%;
+	flex-basis: 100%;
 	left: 0;
 	bottom: 12%;
 	display: flex;
 	justify-content: center;
 
-	.dot {
+	li {
+		display: block;
 		width: 13px;
 		height: 13px;
-		border-radius: 50%;
-		cursor: pointer;
-		background: #dedede;
+		flex-shrink: 0;
 
 		&:not(:last-child) {
 			margin-right: 14px;
 		}
 
-		&.active {
-			background: #b5876d;
+		&.slick-active {
+
+			button {
+				background: #b5876d;
+			}
 		}
+	}
+
+	button {
+		width: 13px;
+		padding: 0;
+		height: 13px;
+		border-radius: 50%;
+		cursor: pointer;
+		display: block;
+		outline: none;
+		background: #dedede;
+		text-indent: -999px;
+		overflow: hidden;
 	}
 }

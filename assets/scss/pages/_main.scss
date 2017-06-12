@@ -248,6 +248,13 @@ section.response {
 		@media (min-width: $responsive-tablet) {
 			margin: 55px 0 40px 0;
 		}
+
+		.dots {
+			top: -50px;
+			bottom: auto;
+			right: 0;
+			justify-content: flex-end;
+		}
 	}
 
 	a {
@@ -270,6 +277,7 @@ section.response {
 		margin: 0 auto;
 		padding-top: 30px;
 		position: relative;
+		outline: none;
 
 		@media (min-width: $responsive-tablet) {
 			width: 33%;
