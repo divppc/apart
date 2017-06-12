@@ -14,33 +14,6 @@ section.lobby {
 	    background: url(assets/images/ui/icons.png) no-repeat 0px -445px;
 	    margin: 25px auto;
 		}
-
-		.control-buttons {
-			position: absolute;
-			text-align: center;
-			width: 100%;
-			left: 0;
-			bottom: 20%;
-
-			a {
-				display: inline-block;
-				width: 42px;
-				height: 40px;
-				background: url("assets/images/ui/icons.png") no-repeat;
-
-				&:first-child {
-					margin-right: 12px;
-				}
-			}
-
-			.share {
-				background-position: 0 -452px;
-			}
-
-			.zoom {
-				background-position: 0 -494px;
-			}
-		}
 	}
 
 	.thumbnails {
@@ -191,5 +164,32 @@ section.about-apartments {
 		&:not(:last-child) {
 			margin-bottom: 15px;
 		}
+	}
+}
+
+.control-buttons {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	left: 0;
+	bottom: 20%;
+
+	a {
+		display: inline-block;
+		width: 42px;
+		height: 40px;
+		background: url("assets/images/ui/icons.png") no-repeat;
+
+		&:first-child {
+			margin-right: 12px;
+		}
+	}
+
+	.share {
+		background-position: 0 -452px;
+	}
+
+	.zoom {
+		background-position: 0 -494px;
 	}
 }

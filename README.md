@@ -7,3 +7,4 @@ Apart hotel
 Номера студио http://apart.div.agency/studio-apartments.html <br>
 Номера люкс http://apart.div.agency/lux-apartments.html <br>
 Номера внутри http://apart.div.agency/room-inside.html <br>
+Галерея http://apart.div.agency/gallery.html <br>

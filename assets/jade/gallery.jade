@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		meta(charset="UTF-8")
+		link(rel="stylesheet", href="https://necolas.github.io/normalize.css/3.0.2/normalize.css")
+		link(rel="stylesheet", href="style.css")
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:300i,400,400i,700")
+		title Apart | Галерея
+	body
+		header
+			.header-slider
+				.slider-buttons
+					button.slider-left
+					button.slider-right
+				.slides
+					.slide(style="background-image: url('assets/images/ui/main-banner.png')")
+						.container
+							h1 Галерея
+							p.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			.top-line
+				.container.clearfix
+					.select-language
+						.current-language
+							.language-flag
+								i.icon.flag-usa
+						ul.language-list
+							li
+								a(href="#")
+									i.icon-flag.usa
+									span English
+							li
+								a(href="#")
+									i.icon-flag.usa
+									span English
+							li
+								a(href="#")
+									i.icon-flag.usa
+									span English
+					ul.top-social
+						li
+							a(href="#" title='Facebook')
+								i.icon.social-facebook
+						li
+							a(href="#" title='Twitter')
+								i.icon.social-twitter
+						li
+							a(href="#" title='Instagram')
+								i.icon.social-instagram
+						li
+							a(href="#" title='Linkedin')
+								i.icon.social-linkedin
+					ul.top-contacts
+						li
+							a(href="tel:18001234567890" class="top-phone") 1800. 12345. 67890
+						li
+							a(href="mailto:mail@website.com" class="top-mail") mail@website.com
+			.nav-line
+				.container.clearfix
+					.main-bar.clearfix
+						.logo
+							a(href="#")
+								img(src="assets/images/ui/main-logo.png", alt="Apart Hotel")
+								span Апарт отель
+						.mobile-menu
+							img(src="assets/images/ui/burger.png", alt="")
+					nav
+						ul.main-nav
+							li
+								a(href="#") ГЛАВНАЯ
+							li
+								a(href="#")	Номера
+								ul.dd-menu
+									li
+										a(href="#") Номера студио
+										ul.dd-menu2
+											li
+												a(href="#") Номера студио
+											li
+												a(href="#") Номера люкс
+											li
+												a(href="#") Номера люкс
+											li
+												a(href="#") Номера люкс
+											li
+												a(href="#") Номера люкс
+											li
+												a(href="#") Номера люкс
+									li
+										a(href="#") Номера люкс
+
+							li
+								a(href="#") ЛОББИ-БАР
+							li
+								a(href="#") ПРОГРАММА ЛОЯЛЬНОСТИ
+							li
+								a(href="#") ГАЛЕРЕЯ
+							li
+								a(href="#" class="search")
+			.breadcrumbs
+				.container
+					ul
+						li
+							a(href="#") Отель
+						li Галерея
+			.booking
+				.container
+					form(action="#")
+						.form-field.date
+							input(type="text" placeholder="ЗАЕЗД" required)
+						.form-field.date
+							input(type="text" placeholder="ВЫЕЗД" required)
+						.form-field
+							select#room(name="room" required)
+								option(value="" disabled selected) Комната
+								option(value="1") 1
+								option(value="2") 2
+								option(value="3") 3
+						.form-field
+							select#kids(name="kids" required)
+								option(value="" disabled selected) Дети
+								option(value="1") 1
+								option(value="2") 2
+								option(value="3") 3
+						.form-field
+							input(type="submit" value="Поиск")
+		main
+			section.gallery
+				.container
+					.item
+						.img-holder
+							.control-buttons
+								a(href="#" class="share")
+								a(href="#" class="zoom")
+							img(src="assets/images/demo/gallary1.png", alt="" class="img-responsive")
+						a(href="#").data
+							span Помещение 3
+							p Гармония, Harmony
+					.item
+						.img-holder
+							.control-buttons
+								a(href="#" class="share")
+								a(href="#" class="zoom")
+							img(src="assets/images/demo/gallary2.png", alt="" class="img-responsive")
+						a(href="#").data
+							span Помещение 3
+							p Гармония, Harmony
+					.item
+						.img-holder
+							.control-buttons
+								a(href="#" class="share")
+								a(href="#" class="zoom")
+							img(src="assets/images/demo/gallary3.png", alt="" class="img-responsive")
+						a(href="#").data
+							span Помещение 3
+							p Гармония, Harmony
+					.item
+						.img-holder
+							.control-buttons
+								a(href="#" class="share")
+								a(href="#" class="zoom")
+							img(src="assets/images/demo/gallary4.png", alt="" class="img-responsive")
+						a(href="#").data
+							span Помещение 3
+							p Гармония, Harmony
+					.item
+						.img-holder
+							.control-buttons
+								a(href="#" class="share")
+								a(href="#" class="zoom")
+							img(src="assets/images/demo/gallary5.png", alt="" class="img-responsive")
+						a(href="#").data
+							span Помещение 3
+							p Гармония, Harmony
+					.item
+						.img-holder
+							.control-buttons
+								a(href="#" class="share")
+								a(href="#" class="zoom")
+							img(src="assets/images/demo/gallary6.png", alt="" class="img-responsive")
+						a(href="#").data
+							span Помещение 3
+							p Гармония, Harmony
+					.item
+						.img-holder
+							.control-buttons
+								a(href="#" class="share")
+								a(href="#" class="zoom")
+							img(src="assets/images/demo/gallary7.png", alt="" class="img-responsive")
+						a(href="#").data
+							span Помещение 3
+							p Гармония, Harmony
+					.item
+						.img-holder
+							.control-buttons
+								a(href="#" class="share")
+								a(href="#" class="zoom")
+							img(src="assets/images/demo/gallary8.png", alt="" class="img-responsive")
+						a(href="#").data
+							span Помещение 3
+							p Гармония, Harmony
+			section.subscribe
+				.container
+					div ПОДПИСАТЬСЯ НА НОВОСТИ
+					form(action="#")
+						input(type="email" required placeholder="Введите адрес электронной почты ")
+						input(type="submit" value="подписаться")
+		footer
+			section.footer
+				.container
+					a(href="#" class="to-top")
+					.about
+						.logo
+							a(href="#")
+								img(src="assets/images/ui/main-logo.png", alt="")
+						p.
+							Lorem ipsum dolor sit amet, conse acteir our adipisicing elit, sed do eiusmod the a tempor the incididunt ut labore et dolore magnaa liqua. Ut enim minimn.
+						ul.footer-social
+							li
+								a(href="#")
+									i.icon.footer-facebook
+							li
+								a(href="#")
+									i.icon.footer-instagram
+							li
+								a(href="#")
+									i.icon.footer-linkedin
+							li
+								a(href="#")
+									i.icon.footer-twitter
+					.contacts
+						.subtitle СВЯЖИТЕСЬ С НАМИ
+						ul
+							li.address
+								span г. Киев, Печерск,  ул. Кудри, 7, ЖК Central Park
+							li.mails
+								span hotelbasis@gmail.com
+								span hotelbasis@gmail.com
+							li.phones
+								span +660 256 24857
+								span +660 256 24857
+					.footer-nav
+						.subtitle БЫСТРЫЕ ССЫЛКИ
+						ul
+							li
+								a(href="#") Главная
+							li
+								a(href="#") Номера
+							li
+								a(href="#") Лобби-бар
+							li
+								a(href="#") Программа лояльности
+							li
+								a(href="#") Галерея
+					.gallery
+						.subtitle Галерея
+						ul
+							li
+								a(href="#")
+									img(src="assets/images/demo/footer-gallary-item1.png", alt="" class="img-responsive")
+							li
+								a(href="#")
+									img(src="assets/images/demo/footer-gallary-item2.png", alt="" class="img-responsive")
+							li
+								a(href="#")
+									img(src="assets/images/demo/footer-gallary-item3.png", alt="" class="img-responsive")
+							li
+								a(href="#")
+									img(src="assets/images/demo/footer-gallary-item4.png", alt="" class="img-responsive")
+							li
+								a(href="#")
+									img(src="assets/images/demo/footer-gallary-item5.png", alt="" class="img-responsive")
+							li
+								a(href="#")
+									img(src="assets/images/demo/footer-gallary-item6.png", alt="" class="img-responsive")
+			.footer-bottom
+				.container © Авторские права 2017  <a href="#">APART-HOTEL</a>  - все права защищены 
+		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
+		script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK7Jw44Mj0AgOq_2Z31V2XqOVhDTw_HZI")
+		script(src="assets/js/main.js")
