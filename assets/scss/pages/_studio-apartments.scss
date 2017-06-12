@@ -2,6 +2,13 @@
 section.apartments {
 	padding: 25px 0 0 0;
 
+	&+section.list {
+
+		.man {
+			width: 50%;
+		}
+	}
+
 	.room {
 		display: flex;
 		flex-wrap: wrap;
@@ -71,29 +78,29 @@ section.apartments {
 			margin: 0 auto;
 		}
 	}
+}
 
-	.dots {
-		position: absolute;
-		width: 100%;
-		left: 0;
-		bottom: 15%;
-		display: flex;
-		justify-content: center;
+.dots {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 12%;
+	display: flex;
+	justify-content: center;
 
-		.dot {
-			width: 13px;
-			height: 13px;
-			border-radius: 50%;
-			cursor: pointer;
-			background: #dedede;
+	.dot {
+		width: 13px;
+		height: 13px;
+		border-radius: 50%;
+		cursor: pointer;
+		background: #dedede;
 
-			&:not(:last-child) {
-				margin-right: 14px;
-			}
+		&:not(:last-child) {
+			margin-right: 14px;
+		}
 
-			&.active {
-				background: #b5876d;
-			}
+		&.active {
+			background: #b5876d;
 		}
 	}
 }

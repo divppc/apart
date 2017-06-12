@@ -5,3 +5,5 @@ Apart hotel
 Галерея внутри http://apart.div.agency/gallary-inside.html <br>
 Программа лояльности http://apart.div.agency/loyalty.html <br>
 Номера студио http://apart.div.agency/studio-apartments.html <br>
+Номера люкс http://apart.div.agency/lux-apartments.html <br>
+Номера внутри http://apart.div.agency/room-inside.html <br>

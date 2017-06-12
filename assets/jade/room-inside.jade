@@ -7,7 +7,7 @@ html(lang="ru")
 		link(rel="stylesheet", href="https://necolas.github.io/normalize.css/3.0.2/normalize.css")
 		link(rel="stylesheet", href="style.css")
 		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:300i,400,400i,700")
-		title Apart | Номера студио
+		title Apart | Номера внутри
 	body
 		header
 			.header-slider
@@ -17,7 +17,7 @@ html(lang="ru")
 				.slides
 					.slide(style="background-image: url('assets/images/ui/main-banner.png')")
 						.container
-							h1 Номера студио
+							h1 Помещение 1 (Нега, BLISS)
 							p.
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 			.top-line
@@ -104,7 +104,9 @@ html(lang="ru")
 					ul
 						li
 							a(href="#") Отель
-						li Номера студио
+						li
+							a(href="#") Номера люкс
+						li Помещение 1 (Нега, BLISS)
 			.booking
 				.container
 					form(action="#")
@@ -127,74 +129,40 @@ html(lang="ru")
 						.form-field
 							input(type="submit" value="Поиск")
 		main
-			section.apartments
+			section.room
 				.container
-					.room
-						.room-data
-							a(href="#") Помещение 1
-								span (Нега, BLISS)
-						.room-photos
+					.room-photos
+						.main-photo
 							.dots
 								.dot.active
 								.dot
 								.dot
-							img(src="assets/images/demo/apartment1.png", alt="" class="img-responsive")
-					.room
-						.room-data
-							a(href="#") Помещение 2
-								span (Нега, BLISS)
-						.room-photos
-							.dots
-								.dot.active
-								.dot
-								.dot
-							img(src="assets/images/demo/apartment2.png", alt="" class="img-responsive")
-					.room
-						.room-data
-							a(href="#") Помещение 3
-								span (Нега, BLISS)
-						.room-photos
-							.dots
-								.dot.active
-								.dot
-								.dot
-							img(src="assets/images/demo/apartment3.png", alt="" class="img-responsive")
-					.room
-						.room-data
-							a(href="#") Помещение 4
-								span (Нега, BLISS)
-						.room-photos
-							.dots
-								.dot.active
-								.dot
-								.dot
-							img(src="assets/images/demo/apartment4.png", alt="" class="img-responsive")
-					.room
-						.room-data
-							a(href="#") Помещение 5
-								span (Нега, BLISS)
-						.room-photos
-							.dots
-								.dot.active
-								.dot
-								.dot
-							img(src="assets/images/demo/apartment5.png", alt="" class="img-responsive")
-					.room
-						.room-data
-							a(href="#") Помещение 6
-								span (Нега, BLISS)
-						.room-photos
-							.dots
-								.dot.active
-								.dot
-								.dot
-							img(src="assets/images/demo/apartment6.png", alt="" class="img-responsive")
+							a(href="#" class="zoom-photo")
+								img(src="assets/images/ui/zoom-icon.png", alt="")
+							img(src="assets/images/demo/room-main-photo.png", alt="" class="img-responsive")
+						.thumbnails
+							.slider-buttons
+								button.slider-left
+								button.slider-right
+							.thumbs
+								.thumb
+									img(src="assets/images/demo/room-thumb1.png", alt="" class="img-responsive")
+								.thumb
+									img(src="assets/images/demo/room-thumb2.png", alt="" class="img-responsive")
+								.thumb
+									img(src="assets/images/demo/room-thumb3.png", alt="" class="img-responsive")
+								.thumb
+									img(src="assets/images/demo/room-thumb4.png", alt="" class="img-responsive")
+					.room-data
+						h2 Помещение 1 (Нега, BLISS)
+						p.
+							Интерьер этих апартаментов наполнен духом одной из частей японского эстетического мировоззрения, где прекрасное воспринимается в подлиннике, без прикрас и излишеств, в чем и черпает свою внутреннюю силу. Фон прихожей, объединенной с кухней, образует палитра природных цветов с мягкими переходами от молочно-бежевого к коричневому и землянистому. Дизайн спальной комнаты построен вокруг разных геометрических форм, от цилиндрических светильников до прямоугольных полотен на стенах. Эти апартаменты, имеющие к тому же отдельный выход на улицу, - отличное функциональное пространство для отдыха после побед и перед новыми достижениями.
 			section.list
 				.container
 					.man
 						img(src="assets/images/ui/man.png", alt="" class="img-responsive")
 					.list-holder
-						.list-title В каждом номере:
+						.list-title В номере:
 						ul.included-items
 							li.
 								Бесплатный Вай Фай
