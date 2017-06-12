@@ -4,3 +4,4 @@ Apart hotel
 Лобби-бар http://apart.div.agency/lobby.html <br>
 Галерея внутри http://apart.div.agency/gallary-inside.html <br>
 Программа лояльности http://apart.div.agency/loyalty.html <br>
+Номера студио http://apart.div.agency/studio-apartments.html <br>
