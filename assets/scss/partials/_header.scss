@@ -186,11 +186,55 @@ header {
 			background-position: -16px -24px;
 		}
 	}
+
+	&.no-slider {
+
+		.breadcrumbs {
+
+			@media (min-width: $responsive-desktop) {
+				margin-top: -90px;
+			}
+
+			@media (min-width: 1600px) {
+				margin-top: -190px;
+			}
+		}
+
+
+		.header-slider {
+
+			.slider-buttons {
+				display: none;
+			}
+
+			.container {
+				min-height: 30vw;
+
+				@media (min-width: $responsive-tablet) {
+					min-height: 38vw;
+				}
+
+				@media (min-width: $responsive-desktop) {
+					min-height: 31vw;
+				}
+			}
+		}		
+	}
 }
 
 .header-slider {
 	position: relative;
 	max-width: 100%;
+
+	.dots {
+		bottom: 30%;
+		z-index: 3;
+		display: none;
+
+		@media (min-width: $responsive-tablet) {
+			display: flex;
+		}
+	}
 
 	.slide {
 		width: 100%;
@@ -290,9 +334,13 @@ header {
 		p {
 			font-size: 15px;
 			display: none;
+	    overflow: hidden;
+	    text-align: center;
+	    -webkit-line-clamp: 3;
+	    -webkit-box-orient: vertical;
 
 			@media (min-width: $responsive-tablet) {
-				display: block;
+				display: -webkit-box;
 			}
 		}
 	}

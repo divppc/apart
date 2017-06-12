@@ -8,3 +8,6 @@ Apart hotel
 Номера люкс http://apart.div.agency/lux-apartments.html <br>
 Номера внутри http://apart.div.agency/room-inside.html <br>
 Галерея http://apart.div.agency/gallery.html <br>
+
+
+Основна шапка - быльша по висоті і зі слайдером - на головній сторінці. Інша шапка, без слайдеру, менша по висоті - header.no-slider - на сторінці http://apart.div.agency/studio-apartments.html 
