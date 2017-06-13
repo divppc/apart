@@ -32,15 +32,17 @@ $(document).ready(function() {
   });
 
   //zoom picture
-  $(".fancybox").fancybox({
-     helpers : {
-          overlay : {
-              css : {
-                  'background' : 'rgba(0, 0, 0, 0.7)'
-              }
-          }
-      }
-  });
+  if($(".fancybox").length !== 0) {
+    $(".fancybox").fancybox({
+       helpers : {
+            overlay : {
+                css : {
+                    'background' : 'rgba(0, 0, 0, 0.7)'
+                }
+            }
+        }
+    });
+  }
 
   //header slider
   $(".header-slider .slides").slick({
