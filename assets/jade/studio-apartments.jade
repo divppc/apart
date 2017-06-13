@@ -7,6 +7,8 @@ html(lang="ru")
 		link(rel="stylesheet", href="https://necolas.github.io/normalize.css/3.0.2/normalize.css")
 		link(rel="stylesheet", href="style.css")
 		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:300i,400,400i,700")
+		link(rel="stylesheet", href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css")
+		link(rel="stylesheet", href="assets/css/datedropper.min.css")
 		title Apart | Номера студио
 	body
 		header.no-slider
@@ -19,7 +21,7 @@ html(lang="ru")
 						.container
 							h1 Номера студио
 							p.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								Наши Номера-Студио - это индивидуальный комфорт в экстравагантном дизайне! Интересные сочетания цветов и форм в наполненных всем необходимым апартаментах - что еще нужно, чтобы отвлечься от будничных забот? 
 			.top-line
 				.container.clearfix
 					.select-language
@@ -29,15 +31,15 @@ html(lang="ru")
 						ul.language-list
 							li
 								a(href="#")
-									i.icon-flag.usa
+									i.icon.flag-usa
 									span English
 							li
 								a(href="#")
-									i.icon-flag.usa
+									i.icon.flag-usa
 									span English
 							li
 								a(href="#")
-									i.icon-flag.usa
+									i.icon.flag-usa
 									span English
 					ul.top-social
 						li
@@ -109,9 +111,9 @@ html(lang="ru")
 				.container
 					form(action="#")
 						.form-field.date
-							input(type="text" placeholder="ЗАЕЗД" required)
+							input(type="text" placeholder="ЗАЕЗД" required class="dates")
 						.form-field.date
-							input(type="text" placeholder="ВЫЕЗД" required)
+							input(type="text" placeholder="ВЫЕЗД" required class="dates")
 						.form-field
 							select#room(name="room" required)
 								option(value="" disabled selected) Комната
@@ -134,60 +136,49 @@ html(lang="ru")
 							a(href="#") Помещение 1
 								span (Нега, BLISS)
 						.room-photos
-							.dots
-								.dot.active
-								.dot
-								.dot
+							img(src="assets/images/demo/apartment1.png", alt="" class="img-responsive")
+							img(src="assets/images/demo/apartment1.png", alt="" class="img-responsive")
 							img(src="assets/images/demo/apartment1.png", alt="" class="img-responsive")
 					.room
 						.room-data
 							a(href="#") Помещение 2
 								span (Нега, BLISS)
 						.room-photos
-							.dots
-								.dot.active
-								.dot
-								.dot
+							img(src="assets/images/demo/apartment2.png", alt="" class="img-responsive")
+							img(src="assets/images/demo/apartment2.png", alt="" class="img-responsive")
 							img(src="assets/images/demo/apartment2.png", alt="" class="img-responsive")
 					.room
 						.room-data
 							a(href="#") Помещение 3
 								span (Нега, BLISS)
 						.room-photos
-							.dots
-								.dot.active
-								.dot
-								.dot
+							img(src="assets/images/demo/apartment3.png", alt="" class="img-responsive")
+							img(src="assets/images/demo/apartment3.png", alt="" class="img-responsive")
 							img(src="assets/images/demo/apartment3.png", alt="" class="img-responsive")
 					.room
 						.room-data
 							a(href="#") Помещение 4
 								span (Нега, BLISS)
 						.room-photos
-							.dots
-								.dot.active
-								.dot
-								.dot
+							img(src="assets/images/demo/apartment4.png", alt="" class="img-responsive")
+							img(src="assets/images/demo/apartment4.png", alt="" class="img-responsive")
 							img(src="assets/images/demo/apartment4.png", alt="" class="img-responsive")
 					.room
 						.room-data
 							a(href="#") Помещение 5
 								span (Нега, BLISS)
 						.room-photos
-							.dots
-								.dot.active
-								.dot
-								.dot
+							img(src="assets/images/demo/apartment5.png", alt="" class="img-responsive")
+							img(src="assets/images/demo/apartment5.png", alt="" class="img-responsive")
+							img(src="assets/images/demo/apartment5.png", alt="" class="img-responsive")
 							img(src="assets/images/demo/apartment5.png", alt="" class="img-responsive")
 					.room
 						.room-data
 							a(href="#") Помещение 6
 								span (Нега, BLISS)
 						.room-photos
-							.dots
-								.dot.active
-								.dot
-								.dot
+							img(src="assets/images/demo/apartment6.png", alt="" class="img-responsive")
+							img(src="assets/images/demo/apartment6.png", alt="" class="img-responsive")
 							img(src="assets/images/demo/apartment6.png", alt="" class="img-responsive")
 			section.list
 				.container
@@ -299,5 +290,6 @@ html(lang="ru")
 			.footer-bottom
 				.container © Авторские права 2017  <a href="#">APART-HOTEL</a>  - все права защищены 
 		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
-		script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK7Jw44Mj0AgOq_2Z31V2XqOVhDTw_HZI")
+		script(src="assets/js/datedropper.min.js")
+		script(src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js")
 		script(src="assets/js/main.js")

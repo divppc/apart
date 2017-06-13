@@ -7,20 +7,22 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css"/>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:300i,400,400i,700"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" href="assets/css/datedropper.min.css"/>
     <title>Apart | Номера люкс</title>
   </head>
   <body>
-    <header>
+    <header class="no-slider">
       <div class="header-slider">
         <div class="slider-buttons">
           <button class="slider-left"></button>
           <button class="slider-right"></button>
         </div>
         <div class="slides">
-          <div style="background-image: url('assets/images/ui/main-banner.png')" class="slide">
+          <div style="background-image: url('assets/images/demo/main-banner2.png')" class="slide">
             <div class="container">
-              <h1>Номера люкс</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h1>Номера-Люкс</h1>
+              <p>Наши номера-люкс с одной спальней  - это глубокий уровень личного комфорта в сочетании с современным ориентированным на достижение чувства домашнего уюта дизайном. Это островок расслабления и избавления от стрессов Большого города для Вас и Ваших спутников.</p>
             </div>
           </div>
         </div>
@@ -32,9 +34,9 @@
               <div class="language-flag"><i class="icon flag-usa"></i></div>
             </div>
             <ul class="language-list">
-              <li><a href="#"><i class="icon-flag usa"></i><span>English</span></a></li>
-              <li><a href="#"><i class="icon-flag usa"></i><span>English</span></a></li>
-              <li><a href="#"><i class="icon-flag usa"></i><span>English</span></a></li>
+              <li><a href="#"><i class="icon flag-usa"></i><span>English</span></a></li>
+              <li><a href="#"><i class="icon flag-usa"></i><span>English</span></a></li>
+              <li><a href="#"><i class="icon flag-usa"></i><span>English</span></a></li>
             </ul>
           </div>
           <ul class="top-social">
@@ -93,10 +95,10 @@
         <div class="container">
           <form action="#">
             <div class="form-field date">
-              <input type="text" placeholder="ЗАЕЗД" required="required"/>
+              <input type="text" placeholder="ЗАЕЗД" required="required" class="dates"/>
             </div>
             <div class="form-field date">
-              <input type="text" placeholder="ВЫЕЗД" required="required"/>
+              <input type="text" placeholder="ВЫЕЗД" required="required" class="dates"/>
             </div>
             <div class="form-field">
               <select id="room" name="room" required="required">
@@ -126,23 +128,11 @@
         <div class="container">
           <div class="room">
             <div class="room-data"><a href="#">Помещение 1<span>(Нега, BLISS)</span></a></div>
-            <div class="room-photos">
-              <div class="dots">
-                <div class="dot active"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-              </div><img src="assets/images/demo/apartment1.png" alt="" class="img-responsive"/>
-            </div>
+            <div class="room-photos"><img src="assets/images/demo/apartment1.png" alt="" class="img-responsive"/><img src="assets/images/demo/apartment1.png" alt="" class="img-responsive"/><img src="assets/images/demo/apartment1.png" alt="" class="img-responsive"/></div>
           </div>
           <div class="room">
             <div class="room-data"><a href="#">Помещение 2<span>(Нега, BLISS)</span></a></div>
-            <div class="room-photos">
-              <div class="dots">
-                <div class="dot active"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-              </div><img src="assets/images/demo/apartment2.png" alt="" class="img-responsive"/>
-            </div>
+            <div class="room-photos"><img src="assets/images/demo/apartment2.png" alt="" class="img-responsive"/><img src="assets/images/demo/apartment2.png" alt="" class="img-responsive"/><img src="assets/images/demo/apartment2.png" alt="" class="img-responsive"/></div>
           </div>
         </div>
       </section>
@@ -228,7 +218,8 @@
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK7Jw44Mj0AgOq_2Z31V2XqOVhDTw_HZI"></script>
+    <script src="assets/js/datedropper.min.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

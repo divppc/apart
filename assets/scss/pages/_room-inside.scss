@@ -40,11 +40,16 @@ section.room {
 		img {
 			margin: 0 auto;
 		}
+
+		.photo {
+			position: relative;
+		}
 	}
 
 	.zoom-photo {
 		position: absolute;
 		top: 55%;
+		outline: none;
 		left: 50%;
 		transform: translateX(-50%);
 	}

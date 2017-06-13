@@ -73,9 +73,11 @@ section.apartments {
 
 	.room-photos {
 		position: relative;
+		min-height: 200px;
 
 		img {
 			margin: 0 auto;
+			display: block;
 		}
 	}
 }

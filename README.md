@@ -11,3 +11,5 @@ Apart hotel
 
 
 Основна шапка - быльша по висоті і зі слайдером - на головній сторінці. Інша шапка, без слайдеру, менша по висоті - header.no-slider - на сторінці http://apart.div.agency/studio-apartments.html 
+
+Менша шапка, без слайдеру і букінгу - header.no-slider.no-booking

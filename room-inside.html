@@ -7,20 +7,23 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css"/>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:300i,400,400i,700"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" href="assets/css/datedropper.min.css"/>
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css"/>
     <title>Apart | Номера внутри</title>
   </head>
   <body>
-    <header>
+    <header class="no-slider">
       <div class="header-slider">
         <div class="slider-buttons">
           <button class="slider-left"></button>
           <button class="slider-right"></button>
         </div>
         <div class="slides">
-          <div style="background-image: url('assets/images/ui/main-banner.png')" class="slide">
+          <div style="background-image: url('assets/images/demo/main-banner2.png')" class="slide">
             <div class="container">
               <h1>Помещение 1 (Нега, BLISS)</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p>Наши Номера-Студио - это индивидуальный комфорт в экстравагантном дизайне! Интересные сочетания цветов и форм в наполненных всем необходимым апартаментах - что еще нужно, чтобы отвлечься от будничных забот? </p>
             </div>
           </div>
         </div>
@@ -32,9 +35,9 @@
               <div class="language-flag"><i class="icon flag-usa"></i></div>
             </div>
             <ul class="language-list">
-              <li><a href="#"><i class="icon-flag usa"></i><span>English</span></a></li>
-              <li><a href="#"><i class="icon-flag usa"></i><span>English</span></a></li>
-              <li><a href="#"><i class="icon-flag usa"></i><span>English</span></a></li>
+              <li><a href="#"><i class="icon flag-usa"></i><span>English</span></a></li>
+              <li><a href="#"><i class="icon flag-usa"></i><span>English</span></a></li>
+              <li><a href="#"><i class="icon flag-usa"></i><span>English</span></a></li>
             </ul>
           </div>
           <ul class="top-social">
@@ -94,10 +97,10 @@
         <div class="container">
           <form action="#">
             <div class="form-field date">
-              <input type="text" placeholder="ЗАЕЗД" required="required"/>
+              <input type="text" placeholder="ЗАЕЗД" required="required" class="dates"/>
             </div>
             <div class="form-field date">
-              <input type="text" placeholder="ВЫЕЗД" required="required"/>
+              <input type="text" placeholder="ВЫЕЗД" required="required" class="dates"/>
             </div>
             <div class="form-field">
               <select id="room" name="room" required="required">
@@ -127,11 +130,10 @@
         <div class="container">
           <div class="room-photos">
             <div class="main-photo">
-              <div class="dots">
-                <div class="dot active"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-              </div><a href="#" class="zoom-photo"><img src="assets/images/ui/zoom-icon.png" alt=""/></a><img src="assets/images/demo/room-main-photo.png" alt="" class="img-responsive"/>
+              <div class="photo"><a href="assets/images/demo/room-main-photo.png" class="zoom-photo fancybox"><img src="assets/images/ui/zoom-icon.png" alt=""/></a><img src="assets/images/demo/room-main-photo.png" alt="" class="img-responsive"/></div>
+              <div class="photo"><a href="http://pipsum.com/560x384" class="zoom-photo fancybox"><img src="assets/images/ui/zoom-icon.png" alt=""/></a><img src="http://pipsum.com/560x384" alt="" class="img-responsive"/></div>
+              <div class="photo"><a href="http://pipsum.com/560x383" class="zoom-photo fancybox"><img src="assets/images/ui/zoom-icon.png" alt=""/></a><img src="http://pipsum.com/560x383" alt="" class="img-responsive"/></div>
+              <div class="photo"><a href="http://pipsum.com/560x385" class="zoom-photo fancybox"><img src="assets/images/ui/zoom-icon.png" alt=""/></a><img src="http://pipsum.com/560x385" alt="" class="img-responsive"/></div>
             </div>
             <div class="thumbnails">
               <div class="slider-buttons">
@@ -143,6 +145,7 @@
                 <div class="thumb"><img src="assets/images/demo/room-thumb2.png" alt="" class="img-responsive"/></div>
                 <div class="thumb"><img src="assets/images/demo/room-thumb3.png" alt="" class="img-responsive"/></div>
                 <div class="thumb"><img src="assets/images/demo/room-thumb4.png" alt="" class="img-responsive"/></div>
+                <div class="thumb"><img src="assets/images/demo/room-thumb3.png" alt="" class="img-responsive"/></div>
               </div>
             </div>
           </div>
@@ -234,7 +237,9 @@
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK7Jw44Mj0AgOq_2Z31V2XqOVhDTw_HZI"></script>
+    <script src="assets/js/datedropper.min.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="assets/js/jquery.fancybox.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

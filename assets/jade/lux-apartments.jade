@@ -7,19 +7,21 @@ html(lang="ru")
 		link(rel="stylesheet", href="https://necolas.github.io/normalize.css/3.0.2/normalize.css")
 		link(rel="stylesheet", href="style.css")
 		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:300i,400,400i,700")
+		link(rel="stylesheet", href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css")
+		link(rel="stylesheet", href="assets/css/datedropper.min.css")
 		title Apart | Номера люкс
 	body
-		header
+		header.no-slider
 			.header-slider
 				.slider-buttons
 					button.slider-left
 					button.slider-right
 				.slides
-					.slide(style="background-image: url('assets/images/ui/main-banner.png')")
+					.slide(style="background-image: url('assets/images/demo/main-banner2.png')")
 						.container
-							h1 Номера люкс
+							h1 Номера-Люкс
 							p.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								Наши номера-люкс с одной спальней  - это глубокий уровень личного комфорта в сочетании с современным ориентированным на достижение чувства домашнего уюта дизайном. Это островок расслабления и избавления от стрессов Большого города для Вас и Ваших спутников.
 			.top-line
 				.container.clearfix
 					.select-language
@@ -29,15 +31,15 @@ html(lang="ru")
 						ul.language-list
 							li
 								a(href="#")
-									i.icon-flag.usa
+									i.icon.flag-usa
 									span English
 							li
 								a(href="#")
-									i.icon-flag.usa
+									i.icon.flag-usa
 									span English
 							li
 								a(href="#")
-									i.icon-flag.usa
+									i.icon.flag-usa
 									span English
 					ul.top-social
 						li
@@ -109,9 +111,9 @@ html(lang="ru")
 				.container
 					form(action="#")
 						.form-field.date
-							input(type="text" placeholder="ЗАЕЗД" required)
+							input(type="text" placeholder="ЗАЕЗД" required class="dates")
 						.form-field.date
-							input(type="text" placeholder="ВЫЕЗД" required)
+							input(type="text" placeholder="ВЫЕЗД" required class="dates")
 						.form-field
 							select#room(name="room" required)
 								option(value="" disabled selected) Комната
@@ -134,20 +136,16 @@ html(lang="ru")
 							a(href="#") Помещение 1
 								span (Нега, BLISS)
 						.room-photos
-							.dots
-								.dot.active
-								.dot
-								.dot
+							img(src="assets/images/demo/apartment1.png", alt="" class="img-responsive")
+							img(src="assets/images/demo/apartment1.png", alt="" class="img-responsive")
 							img(src="assets/images/demo/apartment1.png", alt="" class="img-responsive")
 					.room
 						.room-data
 							a(href="#") Помещение 2
 								span (Нега, BLISS)
 						.room-photos
-							.dots
-								.dot.active
-								.dot
-								.dot
+							img(src="assets/images/demo/apartment2.png", alt="" class="img-responsive")
+							img(src="assets/images/demo/apartment2.png", alt="" class="img-responsive")
 							img(src="assets/images/demo/apartment2.png", alt="" class="img-responsive")
 			section.list
 				.container
@@ -259,5 +257,6 @@ html(lang="ru")
 			.footer-bottom
 				.container © Авторские права 2017  <a href="#">APART-HOTEL</a>  - все права защищены 
 		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
-		script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK7Jw44Mj0AgOq_2Z31V2XqOVhDTw_HZI")
+		script(src="assets/js/datedropper.min.js")
+		script(src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js")
 		script(src="assets/js/main.js")

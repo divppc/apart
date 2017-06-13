@@ -7,19 +7,22 @@ html(lang="ru")
 		link(rel="stylesheet", href="https://necolas.github.io/normalize.css/3.0.2/normalize.css")
 		link(rel="stylesheet", href="style.css")
 		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:300i,400,400i,700")
+		link(rel="stylesheet", href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css")
+		link(rel="stylesheet", href="assets/css/datedropper.min.css")
+		link(rel="stylesheet", href="assets/css/jquery.fancybox.css")
 		title Apart | Номера внутри
 	body
-		header
+		header.no-slider
 			.header-slider
 				.slider-buttons
 					button.slider-left
 					button.slider-right
 				.slides
-					.slide(style="background-image: url('assets/images/ui/main-banner.png')")
+					.slide(style="background-image: url('assets/images/demo/main-banner2.png')")
 						.container
 							h1 Помещение 1 (Нега, BLISS)
 							p.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								Наши Номера-Студио - это индивидуальный комфорт в экстравагантном дизайне! Интересные сочетания цветов и форм в наполненных всем необходимым апартаментах - что еще нужно, чтобы отвлечься от будничных забот? 
 			.top-line
 				.container.clearfix
 					.select-language
@@ -29,15 +32,15 @@ html(lang="ru")
 						ul.language-list
 							li
 								a(href="#")
-									i.icon-flag.usa
+									i.icon.flag-usa
 									span English
 							li
 								a(href="#")
-									i.icon-flag.usa
+									i.icon.flag-usa
 									span English
 							li
 								a(href="#")
-									i.icon-flag.usa
+									i.icon.flag-usa
 									span English
 					ul.top-social
 						li
@@ -111,9 +114,9 @@ html(lang="ru")
 				.container
 					form(action="#")
 						.form-field.date
-							input(type="text" placeholder="ЗАЕЗД" required)
+							input(type="text" placeholder="ЗАЕЗД" required class="dates")
 						.form-field.date
-							input(type="text" placeholder="ВЫЕЗД" required)
+							input(type="text" placeholder="ВЫЕЗД" required class="dates")
 						.form-field
 							select#room(name="room" required)
 								option(value="" disabled selected) Комната
@@ -133,13 +136,22 @@ html(lang="ru")
 				.container
 					.room-photos
 						.main-photo
-							.dots
-								.dot.active
-								.dot
-								.dot
-							a(href="#" class="zoom-photo")
-								img(src="assets/images/ui/zoom-icon.png", alt="")
-							img(src="assets/images/demo/room-main-photo.png", alt="" class="img-responsive")
+							.photo
+								a(href="assets/images/demo/room-main-photo.png" class="zoom-photo fancybox")
+									img(src="assets/images/ui/zoom-icon.png", alt="")
+								img(src="assets/images/demo/room-main-photo.png", alt="" class="img-responsive")
+							.photo
+								a(href="http://pipsum.com/560x384" class="zoom-photo fancybox")
+									img(src="assets/images/ui/zoom-icon.png", alt="")
+								img(src="http://pipsum.com/560x384", alt="" class="img-responsive")
+							.photo
+								a(href="http://pipsum.com/560x383" class="zoom-photo fancybox")
+									img(src="assets/images/ui/zoom-icon.png", alt="")
+								img(src="http://pipsum.com/560x383", alt="" class="img-responsive")
+							.photo
+								a(href="http://pipsum.com/560x385" class="zoom-photo fancybox")
+									img(src="assets/images/ui/zoom-icon.png", alt="")
+								img(src="http://pipsum.com/560x385", alt="" class="img-responsive")
 						.thumbnails
 							.slider-buttons
 								button.slider-left
@@ -153,6 +165,8 @@ html(lang="ru")
 									img(src="assets/images/demo/room-thumb3.png", alt="" class="img-responsive")
 								.thumb
 									img(src="assets/images/demo/room-thumb4.png", alt="" class="img-responsive")
+								.thumb
+									img(src="assets/images/demo/room-thumb3.png", alt="" class="img-responsive")
 					.room-data
 						h2 Помещение 1 (Нега, BLISS)
 						p.
@@ -267,5 +281,7 @@ html(lang="ru")
 			.footer-bottom
 				.container © Авторские права 2017  <a href="#">APART-HOTEL</a>  - все права защищены 
 		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
-		script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK7Jw44Mj0AgOq_2Z31V2XqOVhDTw_HZI")
+		script(src="assets/js/datedropper.min.js")
+		script(src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js")
+		script(src="assets/js/jquery.fancybox.js")
 		script(src="assets/js/main.js")

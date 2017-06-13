@@ -31,6 +31,17 @@ $(document).ready(function() {
     });
   });
 
+  //zoom picture
+  $(".fancybox").fancybox({
+     helpers : {
+          overlay : {
+              css : {
+                  'background' : 'rgba(0, 0, 0, 0.7)'
+              }
+          }
+      }
+  });
+
   //header slider
   $(".header-slider .slides").slick({
     slidesToShow: 1,
@@ -87,14 +98,14 @@ $(document).ready(function() {
 
   function photoSlider() {
 
-    $('.main-photo').slick({
+    $('.container > .main-photo').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
       asNavFor: '.thumbs'
     });
 
-    $('.thumbs').slick({
+    $('.container > .thumbnails > .thumbs').slick({
       slidesToShow: 5,
       slidesToScroll: 1,
       asNavFor: '.main-photo',
@@ -105,30 +116,6 @@ $(document).ready(function() {
   };
 
   photoSlider();
-  //product photos slider end
-
-  $('.main-photo').on('afterChange', function(event, slick, currentSlide, nextSlide){
-    $(".fancybox").fancybox({
-       helpers : {
-            overlay : {
-                css : {
-                    'background' : 'rgba(0, 0, 0, 0.7)'
-                }
-            }
-        }
-    });
-  });
-
-  //zoom picture
-  $(".fancybox").fancybox({
-     helpers : {
-          overlay : {
-              css : {
-                  'background' : 'rgba(0, 0, 0, 0.7)'
-              }
-          }
-      }
-  });
 
   //booking date dropper
   $(".dates").dateDropper({
@@ -139,4 +126,46 @@ $(document).ready(function() {
     format: 'd/m/Y'
   });
 
+  //room photos
+
+  var roomPhotosSlider =  $('.room > .room-photos');
+
+  if (roomPhotosSlider) {
+    for (var i = 0; i < roomPhotosSlider.length; i++) {
+      $(roomPhotosSlider[i]).slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        dotsClass: 'dots'
+      });
+    }
+  };
+
+  //room inside slider
+
+  $(".thumb a").on("click", function (e) {
+    e.preventDefault();
+  });
+
+  function photoSlider2() {
+
+    $('.room-photos > .main-photo').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      asNavFor: '.thumbs'
+    });
+
+    $('.room-photos > .thumbnails > .thumbs').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      asNavFor: '.room-photos > .main-photo',
+      prevArrow: ".slider-left",
+      nextArrow: ".slider-right",
+      focusOnSelect: true
+    });
+  };
+
+  photoSlider2();
 })
