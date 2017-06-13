@@ -241,6 +241,20 @@ header {
 			}
 		}
 
+		.header-slider {
+
+			.container {
+
+				@media (min-width: $responsive-desktop) {
+					min-height: 31vw;
+				}
+
+				@media (min-width: 1400px) {
+					min-height: 28vw;
+				}
+			}
+		}
+
 		.booking {
 			display: none;
 		}
@@ -400,6 +414,22 @@ header {
 
 	.form-field {
 		flex-basis: 100%;
+		position: relative;
+
+		&:not(.date):not(:last-child) {
+			position: relative;
+			
+			&:after {
+				display: block;
+				content: '';
+				position: absolute;
+				top: 22px;
+				right: 8%;
+				width: 8px;
+				height: 4px;
+				background: url("assets/images/ui/icons.png") no-repeat 0px -152px;
+			}			
+		}
 
 		&:not(:last-child) {
 			margin-bottom: 10px;
@@ -431,6 +461,10 @@ header {
 		}
 	}
 
+	select {
+		appearance: none;
+	}
+
 	input,
 	select {
 		display: block;
@@ -460,7 +494,6 @@ header {
 	}
 
 	.date {
-		position: relative;
 
 		&:after {
 			display: block;
