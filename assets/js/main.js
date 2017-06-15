@@ -49,8 +49,8 @@ $(document).ready(function() {
     slidesToShow: 1,
     slidesToScroll: 1,
     infinite: true,
-    prevArrow: ".slider-left",
-    nextArrow: ".slider-right",
+    prevArrow: ".header-slider .slider-buttons .slider-left",
+    nextArrow: ".header-slider .slider-buttons .slider-right",
     mobileFirst: true,
     responsive: [
       {
@@ -62,6 +62,19 @@ $(document).ready(function() {
       }
     ]
   });
+
+  //about hotel images slider
+  var hotelPicts = $(".hotel-img");
+
+  if (hotelPicts.length !== 0) {
+    $(hotelPicts).slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true,
+      dotsClass: 'dots'
+    });
+  }
 
   //response slider
   $(".response-container").slick({
@@ -120,13 +133,7 @@ $(document).ready(function() {
   photoSlider();
 
   //booking date dropper
-  $(".dates").dateDropper({
-    lang: 'ru',
-    animate: false,
-    dropPrimaryColor: '#b5876d',
-    minYear: '2016',
-    format: 'd/m/Y'
-  });
+  $(".dates").datepicker();
 
   //room photos
 
@@ -163,8 +170,8 @@ $(document).ready(function() {
       slidesToShow: 4,
       slidesToScroll: 1,
       asNavFor: '.room-photos > .main-photo',
-      prevArrow: ".slider-left",
-      nextArrow: ".slider-right",
+      prevArrow: ".thumbnails .slider-buttons .slider-left",
+      nextArrow: ".thumbnails .slider-buttons .slider-right",
       focusOnSelect: true
     });
   };

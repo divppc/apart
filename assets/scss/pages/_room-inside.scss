@@ -144,5 +144,16 @@ section.room {
 			}
 		}
 	}
+
+	&+section.list {
+
+		.man {
+			width: 50%;
+
+			img {
+				margin: 0 auto;
+			}
+		}
+	}
 }
 

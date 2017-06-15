@@ -52,7 +52,19 @@ section.gallery {
 		img {
 			object-fit: cover;
 			width: 100%;
-		}		
+		}
+
+		.control-buttons {
+			bottom: -45px;
+			transition: 0.3s;
+		}
+
+		&:hover {
+
+			.control-buttons {
+				bottom: 20%;
+			}
+		}
 	}
 
 	.data {
@@ -60,6 +72,7 @@ section.gallery {
 		text-align: center;
 		padding: 20px;
 		display: block;
+		position: relative;
 
 		span {
 			font-size: 18px;

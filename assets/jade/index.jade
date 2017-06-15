@@ -7,8 +7,8 @@ html(lang="ru")
 		link(rel="stylesheet", href="https://necolas.github.io/normalize.css/3.0.2/normalize.css")
 		link(rel="stylesheet", href="style.css")
 		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:300i,400,400i,700")
+		link(rel="stylesheet", href="assets/css/jquery-ui.min.css")
 		link(rel="stylesheet", href="assets/css/slick.css")
-		link(rel="stylesheet", href="assets/css/datedropper.min.css")		
 		title Apart | Главная
 	body
 		header
@@ -115,9 +115,9 @@ html(lang="ru")
 				.container
 					form(action="#")
 						.form-field.date
-							input(type="text" placeholder="ЗАЕЗД" required class="dates" data-lang="ru")
+							input(type="text" placeholder="ЗАЕЗД" required class="dates")
 						.form-field.date
-							input(type="text" placeholder="ВЫЕЗД" required class="dates" data-lang="ru")
+							input(type="text" placeholder="ВЫЕЗД" required class="dates")
 						.form-field
 							select#room(name="room" required)
 								option(value="" disabled selected) Комната
@@ -144,6 +144,8 @@ html(lang="ru")
 								img(src="assets/images/ui/signature.png", alt="")
 								span -Антон Лаврентьев
 						.hotel-img
+							img(src="assets/images/demo/about-hotel.png", alt="")
+							img(src="assets/images/demo/about-hotel.png", alt="")
 							img(src="assets/images/demo/about-hotel.png", alt="")
 					p.
 						Наш апарт-отель расположился на Печерских холмах в центральной части Киева, на территории элитного жилого комплекса. Всего в нескольких минутах ходьбы находится метро и крупные транспортные развязки, с помощью которых можно легко добраться до всех самых интересных уголков древнего и в то же время современного Киева. 
@@ -320,5 +322,5 @@ html(lang="ru")
 		script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK7Jw44Mj0AgOq_2Z31V2XqOVhDTw_HZI")
 		script(src="assets/js/slick.min.js")
 		script(src="assets/js/map.js")
-		script(src="assets/js/datedropper.min.js")
+		script(src="assets/js/jquery-ui.min.js")
 		script(src="assets/js/main.js")

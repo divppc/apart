@@ -5,6 +5,7 @@
 	position: absolute;
 	top: 0;
 	width: 100%;
+	z-index: 3;
 
 	@media (min-width: $responsive-laptop) {
 		top: 40px;
@@ -35,7 +36,7 @@
 		float: left;
 		position: relative;
 		padding-top: 20px;
-		z-index: 2;
+		z-index: 4;
 
 		&:before {
 			display: block;
@@ -102,12 +103,15 @@
 		}
 
 		&.active {
-			max-height: 100vh;
-			overflow: visible;
-			z-index: 1;
+			overflow: auto;
+			z-index: 3;
 			position: relative;
 			background: #fff;
-			height: 100vh;
+
+
+			@media (min-width: $responsive-laptop) {
+				height: auto;
+			}
 		}
 	}
 
@@ -117,6 +121,7 @@
 		flex-wrap: wrap;
 		padding-top: 50px;
 		padding-bottom: 20px;
+		padding: 50px 10px 20px 10px;
 
 		@media (min-width: $responsive-laptop) {			
 			flex-wrap: nowrap;
@@ -126,12 +131,18 @@
 		&>li {
 
 			display: block;
-			text-align: center;
 			width: 100%;
 			position: relative;
 
 			&:not(:last-child) {
 				margin-bottom: 10px;
+			}
+
+			&:hover {
+
+				&>a {
+					color: #b5876d;
+				}				
 			}
 
 			@media (min-width: $responsive-laptop) {
@@ -152,11 +163,15 @@
 		}
 
 		.dd-menu,
-		.dd-menu2 {
-			position: absolute;
-			display: none;
-			padding-top: 1px;
+		.dd-menu2 {			
+			
 			background: #fff;
+
+			@media (min-width: $responsive-laptop) {
+				position: absolute;
+				display: none;
+				padding-top: 1px;
+			}
 
 			li {
 				text-align: left;
@@ -166,28 +181,44 @@
 					&>.dd-menu2 {
 						display: block;
 					}
+
+					&>a {
+						background: #b5876d;
+						color: #fff;
+					}
 				}
 			}
 
-			a {
-				padding: 12px 15px;
+			a {				
+				font-size: 10px;
+				padding: 5px 0;
 
-				&:hover {
-					background: #b5876d;
-					color: #fff;
+				@media (min-width: $responsive-laptop) {
+					padding: 12px 15px;
+					font-size: 14px;
 				}
 			}
 		}
 
 		.dd-menu {
-			left: 0;
-			top: 100%;
+			padding: 10px;
+
+			@media (min-width: $responsive-laptop) {
+				left: 0;
+				top: 100%;
+				padding: 1px 0 0 0;
+			}
 		}
 
 		.dd-menu2 {
-			top: 0;
-			left: 100%;
-			border-left: 1px solid #563232;
+			padding-left: 20px;
+
+			@media (min-width: $responsive-laptop) {
+				top: 0;
+				left: 100%;
+				padding: 0;
+				border-left: 1px solid #563232;
+			}			
 		}
 
 		a {
@@ -197,16 +228,14 @@
 			white-space: nowrap;
 			display: block;
 			margin: 0 auto;
-
-			&:hover {
-				color: #b5876d;
-			}
 		}
 
 		.search {
 			width: 18px;
 			height: 17px;
 			background: url("assets/images/ui/icons.png") no-repeat 0px -89px;
+			margin: 0;
+
 		}
 	}
 }
